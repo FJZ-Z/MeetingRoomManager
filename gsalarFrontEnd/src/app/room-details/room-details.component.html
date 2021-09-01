@@ -1,0 +1,23 @@
+<h2 class="d-flex justify-content-center">Room Details</h2>
+
+<hr/>
+<div *ngIf="room" class="text-justify">
+  <div>
+    <label><b>Name: </b></label> {{room.name}}
+  </div>
+  <div>
+    <label><b>Date: </b></label> {{room.date| date:"dd/MM/yyyy"}}
+  </div>
+  <div>
+    <label><b>Start: </b></label> {{room.startHour}}
+  </div>
+    <div>
+    <label><b>End: </b></label> {{room.endHour}}
+  </div>
+</div>
+
+<br>
+<br>
+<div class="text-center">
+<button (click)="list()" class="btn btn-primary">Back to Room List</button><br>
+</div>
